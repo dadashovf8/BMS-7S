@@ -49,7 +49,7 @@ A 7-series stack sits in the 24 V class. That is the bus voltage of a lot of equ
 - portable power stations and 24 V backup supplies
 - small solar or off-grid storage
 
-In each of these, the BMS is what separates a battery from a product. What this board does:
+In each of these, the Battery Management  System is what separates a battery from a product. What this board does:
 
 - **Keeps every cell inside its limits.** Each cell is measured individually, and the pack is disconnected on over-voltage, under-voltage, overcurrent or temperature. A pack is only as good as its weakest cell, and a single cell pushed past its limit is the usual start of a failure.
 - **Extends pack life.** Balancing pulls high cells back into line, so the usable capacity does not shrink with every cycle as the cells drift apart.
