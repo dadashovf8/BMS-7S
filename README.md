@@ -6,6 +6,11 @@ I designed this board from scratch: requirements, component selection, schematic
 
 The firmware was written by the software team. My side of that work was the hardware/firmware interface: pin assignment, bus settings, register configuration of the INA239, LTC6811 and BQ76200, and the start-up order. It is summarised in [docs/07](docs/07-firmware-interface.md).
 
+| Contributor | Role |
+|---|---|
+| Orxan ([@dadashovf8](https://github.com/dadashovf8)) | Hardware lead: requirements, schematic, component selection, PCB layout, manufacturing, bring-up and test, HW/FW interface |
+| Shamil ([@shamilmamedov340-ops](https://github.com/shamilmamedov340-ops)) | Schematic design and component selection |
+
 **Not in this repository:** the PCB layout and photos of the finished product. The project was done for an employer, and those parts are proprietary. Schematic and BOM are published.
 
 | | |
