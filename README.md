@@ -39,6 +39,26 @@ The firmware was written by the software team. My side of that work was the hard
 | MCU | STM32F103C8T6, 72 MHz |
 | Connectors | XT60 battery and pack, JST XH balance and UART, JST SH SWD |
 
+## Where it fits
+
+A 7-series stack sits in the 24 V class. That is the bus voltage of a lot of equipment that runs on a rechargeable pack and has to be safe to charge, carry and leave unattended:
+
+- light electric vehicles: e-bikes, scooters, mobility aids
+- mobile robots and AGVs
+- cordless tools and garden equipment
+- portable power stations and 24 V backup supplies
+- small solar or off-grid storage
+
+In each of these, the BMS is what separates a battery from a product. What this board does:
+
+- **Keeps every cell inside its limits.** Each cell is measured individually, and the pack is disconnected on over-voltage, under-voltage, overcurrent or temperature. A pack is only as good as its weakest cell, and a single cell pushed past its limit is the usual start of a failure.
+- **Extends pack life.** Balancing pulls high cells back into line, so the usable capacity does not shrink with every cycle as the cells drift apart.
+- **Charges a deeply discharged pack gently.** The precharge path limits the current until the cells recover.
+- **Knows what the pack is doing.** Cell voltages, current, temperature and charge counted over time are available to the firmware and can be reported over UART to a display, a logger or a host system.
+- **Keeps one ground.** Switching on the high side means the host can talk to the BMS without isolation, whatever state the switches are in.
+
+The LTC6811 has 12 channels, so the same architecture scales to larger stacks with a different supply stage.
+
 ## Architecture
 
 ```
