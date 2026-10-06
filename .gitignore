@@ -1,0 +1,14 @@
+# Altium
+History/
+__Previews/
+*.SchDocPreview
+*.PcbDocPreview
+Project Logs for */
+Project Outputs for */
+*.LdgPcb
+*.~*
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
