@@ -2,7 +2,7 @@
 
 Battery management system for a 7-series battery stack. Built around an STM32F103 with an LTC6811-2 cell monitor, an INA239 high-side shunt monitor and a BQ76200 high-side N-FET driver.
 
-I designed this board from scratch: requirements, component selection, schematic (Altium Designer), PCB layout, manufacturing, assembly, bring-up and test. The board was built and works in its application.
+I led the design of this board from scratch: requirements, component selection, schematic (Altium Designer), PCB layout, manufacturing, assembly, bring-up and test. The board was built and works in its application.
 
 The firmware was written by the software team. My side of that work was the hardware/firmware interface: pin assignment, bus settings, register configuration of the INA239, LTC6811 and BQ76200, and the start-up order. It is summarised in [docs/07](docs/07-firmware-interface.md).
 
