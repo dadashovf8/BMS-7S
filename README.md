@@ -11,7 +11,7 @@ The firmware was written by the software team. My side of that work was the hard
 | Orxan ([@dadashovf8](https://github.com/dadashovf8)) | Hardware lead: requirements, schematic, component selection, PCB layout, manufacturing, bring-up and test, HW/FW interface |
 | Shamil Mammadov ([@shamilmamedov340-ops](https://github.com/shamilmamedov340-ops), [LinkedIn](https://www.linkedin.com/in/shamil-mammadov-419995326)) | Schematic design and component selection |
 
-**Not in this repository:** the PCB layout and photos of the finished product. The project was done for an employer, and those parts are proprietary. Schematic and BOM are published.
+**Not in this repository:** the PCB design files (layout, Gerbers) and photos of the finished product. The project was done for an employer, and those parts are proprietary. The schematic, the BOM and a 3D view of the assembled board are published.
 
 | | |
 |---|---|
@@ -38,6 +38,12 @@ The firmware was written by the software team. My side of that work was the hard
 | Supply | LMR33630 buck 5.0 V → AMS1117 3.3 V |
 | MCU | STM32F103C8T6, 72 MHz |
 | Connectors | XT60 battery and pack, JST XH balance and UART, JST SH SWD |
+
+## PCB
+
+![3D view of the assembled board](img/pcb-3d.png)
+
+The high-current path runs along the left edge: battery and pack XT60s, the six switching MOSFETs between them and the shunt. The cell monitor and the seven balance channels sit in the upper middle, next to the balance connectors on the right edge. The MCU, the crystal and the SWD and UART connectors are in the lower right, away from the power stage.
 
 ## Where it fits
 
@@ -96,7 +102,7 @@ VBAT ─► LMR33630 5 V ─► AMS1117 3.3 V
 hardware/   schematic (PDF) and BOM (CSV), exported from Altium
 docs/       design notes
 calc/       design calculations (Python 3, standard library only)
-img/        sheet renders
+img/        sheet renders, 3D view of the board
 ```
 
 To reproduce the numbers in docs/:
