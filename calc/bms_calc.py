@@ -91,8 +91,7 @@ for name, rp in zip(("min", "typ", "max"), R_PMON):
     k = (R28 + R29 + rp) / R29
     row("PACKDIV", f"Ratio incl. R_PMON {name} ({rp / 1e3:.1f} kohm)", k, "-",
         f"{(k / k_ideal - 1) * 100:+.2f} % vs resistor-only ratio")
-row("PACKDIV", "ADC voltage at 36 V", V_STACK_MAX / k_ideal, "V")
-row("PACKDIV", "Pack voltage per 12-bit LSB (3.3 V ref)", 3.3 / 4096 * k_ideal * 1e3, "mV")
+row("PACKDIV", "Divider output at 36 V", V_STACK_MAX / k_ideal, "V")
 row("PACKDIV", "Divider current at 36 V, PMON_EN = 1", V_STACK_MAX / (R28 + R29) * 1e6, "uA")
 
 # ---------------------------------------------------------------- enable lines

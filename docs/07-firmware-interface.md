@@ -57,8 +57,8 @@ otherwise  -> stay open, or PCHG_EN = 1 for precharge
 Pack-terminal voltage, on demand:
 
 ```
-PMON_EN = 1 -> settle -> ADC on PACKDIV -> PMON_EN = 0
-V_PACK = V_ADC × 27.55   (×27.77 including R_PMON typ, or a calibrated factor)
+PMON_EN = 1 -> settle -> read PACKDIV -> PMON_EN = 0
+V_PACK = V_DIV × 27.55   (×27.77 including R_PMON typ, or a calibrated factor)
 ```
 
 ## 7.5 Independent watchdog

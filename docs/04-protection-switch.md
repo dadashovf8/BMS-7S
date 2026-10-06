@@ -87,10 +87,10 @@ The resistors are rated for the full charger voltage across them. PCHG gate driv
 ## 4.5 Pack-terminal voltage (PACKDIV)
 
 ```
-V_ADC = V_PACK × R29 / (R28 + R29 + R_PMON)
+V_DIV = V_PACK × R29 / (R28 + R29 + R_PMON)
 ```
 
-- The resistor ratio is 27.55, so 36 V at the pack gives 1.31 V at the MCU.
+- The resistor ratio is 27.55, so 36 V at the pack gives 1.31 V at the divider output.
 - R_PMON is the BQ76200's internal switch (1.5 – 3.5 kΩ). It shifts the ratio to 27.68 – 27.86. With 0.1 % thin-film resistors for R28/R29, a single calibration point against a meter brings the reading to the resistor tolerance.
 - The divider only conducts while PMON_EN = 1 (116 µA at 36 V), so it costs nothing while idle.
 - The PACK+ reading tells the MCU whether a charger or a load is present while the switches are open.
