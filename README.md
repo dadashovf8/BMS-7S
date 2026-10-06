@@ -9,7 +9,7 @@ The firmware was written by the software team. My side of that work was the hard
 | Contributor | Role |
 |---|---|
 | Orxan ([@dadashovf8](https://github.com/dadashovf8)) | Hardware lead: requirements, schematic, component selection, PCB layout, manufacturing, bring-up and test, HW/FW interface |
-| Shamil Mammadov ([@shamilmamedov340-ops](https://github.com/shamilmamedov340-ops)) | Schematic design and component selection |
+| Shamil Mammadov ([@shamilmamedov340-ops](https://github.com/shamilmamedov340-ops), [LinkedIn](https://www.linkedin.com/in/shamil-mammadov-419995326)) | Schematic design and component selection |
 
 **Not in this repository:** the PCB layout and photos of the finished product. The project was done for an employer, and those parts are proprietary. Schematic and BOM are published.
 
