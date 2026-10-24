@@ -10,7 +10,9 @@ The firmware was written by the software team. My side of that work was the hard
 |---|---|
 | Orxan ([@dadashovf8](https://github.com/dadashovf8)) | Hardware lead: requirements, schematic, component selection, PCB layout, manufacturing, bring-up and test, HW/FW interface |
 | Shamil Mammadov ([@shamilmamedov340-ops](https://github.com/shamilmamedov340-ops), [LinkedIn](https://www.linkedin.com/in/shamil-mammadov-419995326)) | Schematic design and component selection |
-| Hakim Musazada ([@hakimmusazada](https://github.com/hakimmusazada), [LinkedIn] (https://www.linkedin.com/in/hakim-musazada)) | Schematic design and component selection |
+[Hakim Musazada](https://www.linkedin.com/in/senin-linkedin-istifadeci-adin/)
+
+ | Schematic design and component selection |
 
 **Not in this repository:** the PCB design files (layout, Gerbers) and photos of the finished product. The project was done for an employer, and those parts are proprietary. The schematic, the BOM and a 3D view of the assembled board are published.
 
